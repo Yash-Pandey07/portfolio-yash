@@ -3,7 +3,7 @@ import "./globals.css";
 import Cursor from "@/components/Cursor";
 import Noise from "@/components/Noise";
 
-const BASE_URL = "https://yashpandey.dev"; // update to real domain after Vercel deploy
+const BASE_URL = "https://portfolio-yash-sage.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
