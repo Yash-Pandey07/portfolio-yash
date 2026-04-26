@@ -51,7 +51,6 @@ next-env.d.ts
 
 # AI-generated planning artifacts
 PLAN.md
-ARCHITECTURE.md
 
 # Build artifacts (belt-and-suspenders for root-level file)
 tsconfig.tsbuildinfo
