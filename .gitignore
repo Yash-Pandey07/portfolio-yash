@@ -39,3 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# Added by code-review-graph
+.code-review-graph/
+
+# Claude Code — local/personal config (never commit)
+.claude/settings.local.json
+.claude/skills/
+
+# MCP server config — may contain API keys/tokens
+.mcp.json
+
+# AI-generated planning artifacts
+PLAN.md
+ARCHITECTURE.md
+
+# Build artifacts (belt-and-suspenders for root-level file)
+tsconfig.tsbuildinfo
