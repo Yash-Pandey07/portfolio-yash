@@ -52,7 +52,7 @@ export default function Blog() {
       <div className="max-w-7xl mx-auto">
         <SectionHeader label="BLOG" title="Articles" subtitle="thoughts & guides" />
 
-        <div className="mt-16 grid md:grid-cols-3 gap-6">
+        <div className="mt-16 grid md:grid-cols-3 gap-6 items-stretch">
           {posts.length > 0
             ? posts.map((post) => (
                 <LivePostCard key={post.id} post={post} />
@@ -97,7 +97,7 @@ function LivePostCard({ post }: { post: DevToPost }) {
       href={post.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="misty-card rounded-2xl p-6 flex flex-col gap-4 relative overflow-hidden group"
+      className="misty-card rounded-2xl p-6 flex flex-col gap-4 relative overflow-hidden group h-full"
       style={{ textDecoration: "none", transition: "border-color 0.25s" }}
       onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.15)"; }}
       onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.08)"; }}
@@ -131,16 +131,15 @@ function LivePostCard({ post }: { post: DevToPost }) {
       </h3>
 
       {post.description && (
-        <p style={{
-          fontFamily: "'Satoshi', sans-serif",
-          fontSize: "0.825rem",
-          color: "rgba(255,255,255,0.45)",
-          lineHeight: 1.6,
-          display: "-webkit-box",
-          WebkitLineClamp: 2,
-          WebkitBoxOrient: "vertical",
-          overflow: "hidden",
-        }}>
+        <p
+          className="line-clamp-2"
+          style={{
+            fontFamily: "'Satoshi', sans-serif",
+            fontSize: "0.825rem",
+            color: "rgba(255,255,255,0.45)",
+            lineHeight: 1.6,
+          }}
+        >
           {post.description}
         </p>
       )}
