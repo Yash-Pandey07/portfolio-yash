@@ -390,20 +390,21 @@ export default function Hero({ revealed }: { revealed: boolean }) {
                     src="/avatar.jpg"
                     alt="Yash Pandey"
                     style={{
-                      width: 64,
-                      height: 64,
+                      width: 100,
+                      height: 100,
                       borderRadius: "50%",
                       objectFit: "cover",
-                      objectPosition: "top",
-                      border: "2px solid rgba(99,102,241,0.4)",
+                      objectPosition: "top center",
+                      border: "2px solid rgba(99,102,241,0.5)",
+                      boxShadow: "0 0 20px rgba(99,102,241,0.2)",
                     }}
                   />
                   <div>
-                    <p style={{ fontFamily: "'Cabinet Grotesk', sans-serif", fontWeight: 700, fontSize: "1rem", color: "white" }}>
-                      Yash Pandey
-                    </p>
-                    <p style={{ fontFamily: "monospace", fontSize: "10px", color: "rgba(99,102,241,0.8)", letterSpacing: "0.05em" }}>
+                    <p style={{ fontFamily: "monospace", fontSize: "11px", color: "rgba(99,102,241,0.9)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
                       Senior SDET
+                    </p>
+                    <p style={{ fontFamily: "'Satoshi', sans-serif", fontSize: "0.8rem", color: "rgba(255,255,255,0.45)", marginTop: "2px" }}>
+                      Bayone Solutions
                     </p>
                   </div>
                 </div>

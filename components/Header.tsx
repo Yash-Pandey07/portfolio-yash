@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 const navLinks = [
   { label: "WORK", href: "#projects" },
   { label: "MANUAL QA", href: "#manual-qa" },
+  { label: "HOW I TEST", href: "#how-i-test" },
   { label: "SKILLS", href: "#skills" },
   { label: "BLOG", href: "#blog" },
   { label: "CONTACT", href: "#contact" },
@@ -63,12 +64,6 @@ export default function Header({ revealed }: { revealed: boolean }) {
             YP
           </span>
         </div>
-        <span
-          className="text-white text-sm uppercase opacity-80"
-          style={{ fontFamily: "'Satoshi', sans-serif", letterSpacing: "0.2em" }}
-        >
-          Yash Pandey
-        </span>
       </a>
 
       {/* Nav */}

@@ -8,6 +8,7 @@ import Marquee from "@/components/Marquee";
 import Projects from "@/components/Projects";
 import Terminal from "@/components/Terminal";
 import ManualQA from "@/components/ManualQA";
+import HowITest from "@/components/HowITest";
 import Skills from "@/components/Skills";
 import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
@@ -25,6 +26,7 @@ export default function Home() {
         <Projects />
         <Terminal />
         <ManualQA />
+        <HowITest />
         <Skills />
         <Blog />
         <Footer />
