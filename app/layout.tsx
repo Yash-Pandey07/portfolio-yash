@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Cursor from "@/components/Cursor";
 import Noise from "@/components/Noise";
+import { Analytics } from "@vercel/analytics/next";
 
 const BASE_URL = "https://portfolio-yash-sage.vercel.app";
 
@@ -108,6 +109,7 @@ export default function RootLayout({
           <Cursor />
           <Noise />
           {children}
+          <Analytics />
         </body>
     </html>
   );
