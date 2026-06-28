@@ -11,6 +11,16 @@ export interface Project {
 export const projects: Project[] = [
   // ── Live projects ──────────────────────────────────────────────────────────
   {
+    title: "Playwright SDET Mastery",
+    description:
+      "The ultimate free, open-source ebook & learning roadmap for SDETs. Features 72+ structured modules covering Playwright, API testing, CI/CD, DevOps, system design, and interview prep.",
+    tags: ["TypeScript", "Playwright", "Ebook", "CI/CD"],
+    github: "https://github.com/Yash-Pandey07/playwright-sdet-mastery",
+    demo: "https://playwright-sdet-mastery.vercel.app/",
+    status: "live",
+    featured: true,
+  },
+  {
     title: "Real-Time QA Dashboard",
     description:
       "Live QA intelligence platform aggregating CI/CD pipeline status, Jira tracking, and test results into a unified ops view.",
